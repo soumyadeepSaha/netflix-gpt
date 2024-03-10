@@ -1,12 +1,9 @@
+import Body from "./components/Body.js";
 
-import './App.css';
 
 function App() {
   return (
-    <div className="text-green-500
-    ">
-        Namaste everyone
-    </div>
+<Body/>
   );
 }
 
