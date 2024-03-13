@@ -178,3 +178,8 @@ so when the component is unmounted if we want to do something we return from the
 # creating Custom Hooks for Trailer Video
 
 # BUILDLING VIDEO BACKGROUND PART
+
+
+
+# creatingmovie suggestions list
+
