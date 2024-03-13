@@ -126,3 +126,55 @@ this above api is like an event listner
 # BROWSING PAGEEE
 --USE tmdb api for fetching movies 
 
+
+
+-- some bugs
+
+-- how to restrict the routes as we can easily go to the browser page
+ -- if the user is logged in redirect me to browsing page 
+ -- if the user is not logged in always redirect to login page
+
+ - when we are not logged in our user is null at that time when we are trying to access the browse page(through routee) we are not checking auth over here and we are not redirecting it to login page as the user is not present.
+
+- so if the user access token is not their and the user is not their and somebody wants to access browse it should redirect me to login page.
+
+
+-- the ideal solution will e whenever the auth is passed we should navigate
+-- and we should have our navigate in some portion child to react provider anywhere which exists in the whole app everywhere say the header
+
+-- (**important**)note that in the useeffect call we are calling the onauthstatechange which basically returns an unsubscribe function(according to firebase doc) and if we return this unsubscribe it will remove this onauthstatechanged function from our browser on onmount of the header compo
+
+
+so when the component is unmounted if we want to do something we return from the usestate and call a callback function while returning....
+
+
+# creating my own custom hook - can use for any functionality as per us
+
+
+
+# START BUILDING BROWSE PAGE
+
+-- so structure{ (dividing ui)
+ 
+  --Divide BROWSE INTO TWO PARTS--
+  maincontainer
+  --VideoBackground
+  --Videotitle
+  secondarycontainer
+    --movielist*n
+     -cards*n
+
+
+
+}
+
+
+
+# Building Video Title
+
+# Build video background
+-- by taking the youtube keyfromthe trailers of the movie we have selected(trailersor clips of the movie via an api call to fetchthose clips from tmdb) so basically going to yt addin the key to the url and getting the video going to share and going to embedded taking the code and then copy psting it to the videobackground div.s
+
+# creating Custom Hooks for Trailer Video
+
+# BUILDLING VIDEO BACKGROUND PART
