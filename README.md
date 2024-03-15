@@ -33,6 +33,14 @@
 -embedded the YT video and make it autoplay and mute
 -tailwind classes to make maincontainer look awesome
 -Build Secondary component
+-Build Movie List 
+-Build Movie Card
+-found out TMDB image CDN url
+-made the browse page amazing with tailwind css
+- usepopular movies Custom hook
+- GPT Search Feature
+
+
 # Features
  -Login/sign UP
           -Sign In / Sign up form
